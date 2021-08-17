@@ -23,7 +23,7 @@ def mainf():
     url_content = req.json()
 
     df = jsonToCsv(url_content)
-    st.title('Mortality Rate Forecasting')
+    st.markdown('Mortality Rate Forecasting')
     st.markdown('This page allows you to check forecast of mortality rate from the selected date due to covid19.')
     st.markdown('Due to Covid19, death rate has been increasing gradually since 2020, the worst pandemic ever the world had seen.')
     st.sidebar.header("Date:")
@@ -119,9 +119,7 @@ def mainf():
     df_india_2021_prophet['ds']=pd.to_datetime(df_india_2021_prophet['ds'])
     plt.plot(pd.concat([df_india_2021_prophet[(df_india_2021_prophet.ds <= split_f)].set_index('ds')['y'],
                         forecast.set_index('ds')['yhat']],axis=1))
-
+    plt.xlabel('Date', color='White')
+    plt.ylabel('Rate', color='White')
     st.write("Prediction from {}".format(str(split)))
     st.plotly_chart(model.plot(forecast), use_container_width=True)
-    
-    # st.write("Prediction Dataframe plot {}".format(str(split)))
-    # st.plotly_chart(mpl_fig, use_container_width=True)
