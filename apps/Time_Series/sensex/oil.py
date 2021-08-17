@@ -56,13 +56,14 @@ def predict(data, split_f):
 
     ax = data.plot(label='observed', figsize=(14, 7))
     pred_uc.predicted_mean.plot(ax=ax, label='Forecast')
-    ax.fill_between(pred_ci.index,
+    fig = plt.plot(ax)
+    fig.fill_between(pred_ci.index,
                     pred_ci.iloc[:, 0],
                     pred_ci.iloc[:, 1], color='k', alpha=.25)
-    ax.set_xlabel('Date')
-    ax.set_ylabel('Closing Price')
+    fig.xlabel('Date', color='White')
+    fig.ylabel('Closing Price', color='White')
     plt.legend()
-    st.plotly_chart(plt, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
 
 
 
