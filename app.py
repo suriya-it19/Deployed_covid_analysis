@@ -1,5 +1,5 @@
-import os
-os.system("sudo apt-get install libsm6 libxrender1 libfontconfig1)
+# import os
+# os.system("sudo apt-get install libsm6 libxrender1 libfontconfig1)
 # os.system("apt update && apt install -y libsm6 libxext6")
 # os.system("apt-get install -y libxrender-dev")
 
