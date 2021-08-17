@@ -1,5 +1,5 @@
 emoji==1.4.2
-matplotlib==3.4.2
+matplotlib==3.4.3
 Flask==1.1.2
 thop==0.0.31.post2005241907
 nltk==3.5
