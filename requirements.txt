@@ -20,8 +20,6 @@ base58==2.1.0
 beautifulsoup4==4.9.3
 bleach==4.0.0
 blinker==1.4
-boltiot==1.11.2
-Brlapi==0.6.6
 bs4==0.0.1
 cachetools==4.2.2
 cchardet==2.1.7
