@@ -11,13 +11,24 @@ def app():
     
     st.subheader('Here you can browse the sidebar for using various tools such as')
     st.markdown('1. Detecting presence of Covid-19 from CT scan images')
+    st.image("apps/images/ct scan", caption="image source: Mikael Häggström, High-resolution computed tomograph of a normal thorax, coronal plane (37), CC0 1.0")
     st.write("On uploading CT scan images in jpg format, the model predicts the presence of Covid19 with a certain confidence threshold")
+    st.write("")
+    
     st.markdown('2. Live Sentiment in twitter/Historical Sentiment for 2021')
+    st.image("apps/images/sentiment", caption="image source: bensonruan.com")
     st.write('Depening on the tracker terms selected, sentiment graph for live tweets is displayed. Additionally, user can view historical sentiment tweets for the year 2021')
+    st.write("")
+    
     st.markdown('3. Covid-19 predictor from symptoms')
+    st.image("apps/images/symptoms", caption="image source: https://www.sharp.com/health-news/the-top-5-symptoms-of-covid-19.cfm")
     st.write('Based on the symptoms experienced, model can predict the presence of Covid19 with a certain confidence threshold')
+    st.write("")
+    
     st.markdown('4. Economic Forecast for the previous months')
-    st.write('')
-
+    st.image("apps/images/forecastn")
+    st.write("Time Series models like Arima have been used to analyse the impact on economy due to Covid 19. Users can toggle between dates and types of economic indicators")
+    st.write("")
+    
     st.markdown('## Acknowledgements')
     st.write('Thanks to Omdena and Omdena India Chapter for providing the oppurtunity and guidance to successfully complete the project.')
