@@ -10,9 +10,15 @@ def app():
     st.write('The project will be made open-source and the results obtained can help create awareness about the spread of Covid19 and its impact on the Indian economy. The final tracker and the dashboard made can be used as a tool to track vaccine availability across various states.')
     
     st.subheader('Here you can browse the sidebar for using various tools such as')
+    
+    st.write("")
+    st.write("")
+    
     st.markdown('1. Detecting presence of Covid-19 from CT scan images')
     st.image("apps/images/ct scan.jpg", caption="image source: Mikael Häggström, High-resolution computed tomograph of a normal thorax, coronal plane (37), CC0 1.0", use_column_width=True)
     st.write("On uploading CT scan images in jpg format, the model predicts the presence of Covid19 with a certain confidence threshold")
+    st.write("")
+    st.write("")
     st.write("")
     st.write("")
     st.write("")
@@ -23,6 +29,8 @@ def app():
     st.write("")
     st.write("")
     st.write("")
+    st.write("")
+    st.write("")
     
     st.markdown('3. Covid-19 predictor from symptoms')
     st.image("apps/images/symptoms.png", caption="image source: https://www.sharp.com/health-news/the-top-5-symptoms-of-covid-19.cfm", use_column_width=True)
@@ -30,10 +38,14 @@ def app():
     st.write("")
     st.write("")
     st.write("")
+    st.write("")
+    st.write("")
     
     st.markdown('4. Economic Forecast for the previous months')
     st.image("apps/images/forecast.PNG", use_column_width=True)
     st.write("Time Series models like Arima have been used to analyse the impact on economy due to Covid 19. Users can toggle between dates and types of economic indicators")
+    st.write("")
+    st.write("")
     st.write("")
     st.write("")
     st.write("")
