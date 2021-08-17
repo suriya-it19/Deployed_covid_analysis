@@ -17,7 +17,7 @@ from fbprophet.plot import plot_plotly
 import plotly.offline as py
 
 def mainv():
-    st.title('Vaccination details Forecasting')
+    st.markdown('Vaccination details Forecasting')
     st.markdown('This page allows you to check forecast of vaccinatoin doses, vaccinated rate from the selected date.')
     st.markdown('Ever since the Covid19 pandemic, vaccination has been observed to provide good immunity towards the virus, to check the forecast select a date.')
     
@@ -66,16 +66,16 @@ def mainv():
 
     if choice == "Total Vaccinations":
         fig = plot_plotly(m, forecast)
-        fig.update_xaxes(title='Date')
-        fig.update_yaxes(title='Rate')
+        fig.update_xaxes(title='Date', color='White')
+        fig.update_yaxes(title='Rate', color='White')
         st.write("Forecast on total_vaccinations from {}".format(str(split)))
         st.plotly_chart(fig, use_container_width=True)
 
     elif choice == "People Vaccinated":
         st.write("Forecast on people_vaccinated from {}".format(str(split)))
         fig1 = plot_plotly(m1, forecast1)
-        fig1.update_xaxes(title='Date')
-        fig1.update_yaxes(title='Rate')
+        fig1.update_xaxes(title='Date', color='White')
+        fig1.update_yaxes(title='Rate', color='White')
         st.plotly_chart(fig1, use_container_width=True)
 
     elif choice == "Fully Vaccinated":
