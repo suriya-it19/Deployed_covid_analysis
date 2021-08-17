@@ -3,6 +3,7 @@ channels:
     - conda-forge
 dependencies:
     - python=3.7.9
+    - pip=20.3.3
     - fbprophet
     - pip:
         - emoji==1.4.2
