@@ -41,15 +41,11 @@ stop = set(stopwords.words('english'))
 
 
 
-import apps.Sentiment_Analysis.settings as settings
 import tweepy
 import datetime
 
-# In[20]:
-
-
-auth = tweepy.OAuthHandler(settings.API_key, settings.API_Secret_Key)
-auth.set_access_token(settings.Access_token, settings.Access_Token_Secret)
+auth = tweepy.OAuthHandler(st.secrets["API_key"], st.secrets["API_Secret_Key"])
+auth.set_access_token(st.secrets["Access_token"], st.secrets["Access_Token_Secret"])
 api = tweepy.API(auth)
 
 
