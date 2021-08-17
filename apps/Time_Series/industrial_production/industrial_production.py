@@ -41,13 +41,13 @@ def model_forcast_plot(dataset_,columns_, split):
     fig.update_xaxes(
         rangeslider_visible=True,
         )
-    fig.update_xaxes(title='Date')
-    fig.update_yaxes(title='Rate')
+    fig.update_xaxes(title='Date', color="White")
+    fig.update_yaxes(title='Rate', color="White")
     st.plotly_chart(fig, use_container_width=True)
 
 
 def maini():
-    st.write('Industrial Production Rate Forecast')
+    st.markdown('Industrial Production Rate Forecast')
     st.markdown('This page allows you to check trends on Industrial production rate over the years in India.')
     
     st.sidebar.header("Date:")
