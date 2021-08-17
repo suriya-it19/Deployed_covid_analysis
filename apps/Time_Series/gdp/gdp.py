@@ -40,13 +40,13 @@ def model_forcast_plot(dataset_,columns_, split):
     fig.update_xaxes(
         rangeslider_visible=True,
         )
-    fig.update_xaxes(title='Date')
-    fig.update_yaxes(title='Rate')
+    fig.update_xaxes(title='Date', color="White")
+    fig.update_yaxes(title='Rate', color="White")
     st.plotly_chart(fig, use_container_width=True)
 
 
 def maing():
-    st.write('GDP Forecast')
+    st.markdown('GDP Forecast')
     st.markdown('This page allows you to check trends on Gross Domestic Product over the years in India.')
     
     st.sidebar.header("Date:")
