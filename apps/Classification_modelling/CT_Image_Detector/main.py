@@ -22,7 +22,7 @@ def predict(image_path, conf, thick):
 
 st.cache(suppress_st_warning=True)
 def detect():
-    st.title('CT Scan Detector')
+    st.markdown('CT Scan Detector')
     st.write("")
     st.markdown("A Robust CT scan detector to identify infected region in Covid19 patient's CT scans")
     st.markdown('This feature provides accurate results in seconds.')
