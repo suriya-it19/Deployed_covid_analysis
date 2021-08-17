@@ -3,12 +3,12 @@ from apps.Classification_modelling.CT_Image_Detector.yolov5.detect import run
 class Detector:
     def __init__(self,
                 image="apps/Classification_modelling/CT_Image_Detector/images/049fce8128f9.jpg",
-                conf_thres=0.3,
+                # conf_thres=0.3,
                 line_thickness=1):
         self.model_path="apps/Classification_modelling/CT_Image_Detector/model/best.pt"
         self.image_path=image
         self.img_size=256
-        self.conf_thres=conf_thres
+        self.conf_thres=0.3
         self.iou_thres=0.5
         self.thickness=line_thickness
 
