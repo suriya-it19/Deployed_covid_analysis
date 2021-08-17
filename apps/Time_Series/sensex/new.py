@@ -37,8 +37,8 @@ def predict(data, split_f):
     pred = m.make_future_dataframe(periods=365)
     predictions = m.predict(pred)
     fig = plot_plotly(m, predictions)
-    fig.update_xaxes(title='Date')
-    fig.update_yaxes(title='Price')
+    fig.update_xaxes(title='Date', color="white")
+    fig.update_yaxes(title='Price', color="white")
     st.plotly_chart(fig)
 
 
@@ -65,7 +65,7 @@ def nifty(split):
     predict(nifty, split_f)
 
 def new():
-    st.title('Stock Market Forecasting')
+    st.markdown('Stock Market Forecasting')
     st.markdown('Due to the COVID-19, there were a lot of changes in the economy. Changes that had never occurred before. This page is meant to predict the state of the economy in the future in the perspective of the stock market')
     st.sidebar.header('Data:')
     choice = st.sidebar.selectbox('Choice:', ('BSE Sensex','NSE Nifty', 'Oil Exchange'))
@@ -77,5 +77,3 @@ def new():
         nifty(split)
     elif(choice == 'Oil Exchange'):
         oil(split)
-
-
