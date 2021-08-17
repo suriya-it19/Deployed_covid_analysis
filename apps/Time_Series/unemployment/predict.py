@@ -17,7 +17,7 @@ import pmdarima as pm
 import plotly.offline as py
 
 def mainu():
-    st.title('Unemployment Rate Forecasting')
+    st.markdown('Unemployment Rate Forecasting')
     st.markdown('This page allows you to check forecast of unemployment rate from the selected date.')
     st.markdown('Due to Covid19, unemployment has been a static result for all, which is the most downgraded result since 2015')
     st.sidebar.header("Date:")
@@ -48,7 +48,7 @@ def mainu():
 
     mpl_fig = plt.figure()
     plt.plot(pd.concat([df[(df.index.get_level_values(0) <= split_f)][' Estimated Unemployment Rate (%)'],forecast1_df],axis=1))
-    plt.xlabel('Date')
-    plt.ylabel('Rate')
+    plt.xlabel('Date', color='White')
+    plt.ylabel('Rate', color='White')
     st.write("Unemployment Rate Forecast from {}".format(str(split)))
     st.plotly_chart(mpl_fig, use_container_width=True)
