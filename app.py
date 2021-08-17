@@ -1,6 +1,7 @@
-!pip install opencv-python
-!apt update && apt install -y libsm6 libxext6
-!apt-get install -y libxrender-dev
+import os
+os.system("pip install opencv-python")
+os.system("apt update && apt install -y libsm6 libxext6")
+os.system("apt-get install -y libxrender-dev")
 
 import streamlit as st
 from multiapp import MultiApp
