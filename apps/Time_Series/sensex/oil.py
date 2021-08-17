@@ -62,7 +62,7 @@ def predict(data, split_f):
     ax.set_xlabel('Date')
     ax.set_ylabel('Closing Price')
     plt.legend()
-    st.pyplot(plt)
+    st.plotly_chart(plt, use_container_width=True)
 
 
 
