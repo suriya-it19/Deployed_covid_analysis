@@ -25,7 +25,7 @@ def predictCovid(inputArray):
 
 st.cache(suppress_st_warning=True)
 def detect2():
-    st.title('Covid19 Symptoms Analysis')
+    st.markdown('Covid19 Symptoms Analysis')
     st.write("")
     st.markdown('This page allows you to check your covid19 infection probability using symptoms.')
     st.markdown('Answer to the following questions, to get information on your covid19 infection details')
