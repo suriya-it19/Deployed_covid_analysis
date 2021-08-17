@@ -1,6 +1,7 @@
 import os
-os.system("apt update && apt install -y libsm6 libxext6")
-os.system("apt-get install -y libxrender-dev")
+os.system("sudo apt-get install libsm6 libxrender1 libfontconfig1)
+# os.system("apt update && apt install -y libsm6 libxext6")
+# os.system("apt-get install -y libxrender-dev")
 
 import streamlit as st
 from multiapp import MultiApp
